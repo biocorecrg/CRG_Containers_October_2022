@@ -64,7 +64,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#major-clean">Major clean</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#exercises">Exercises</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exercise">Exercise</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#volumes">Volumes</a></li>
@@ -319,56 +319,13 @@
 </ul>
 </section>
 </section>
-<section id="exercises">
-<h3>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading"></a></h3>
-<ul>
-<li><p>1 - <strong>Alpine</strong></p></li>
-<li><p><strong>Search</strong> and <strong>pull</strong> the <cite>alpine</cite> image (tag <strong>3.12</strong>) - it is an <strong>official build</strong>.</p></li>
-<li><p>Can you run a container from this image and make it print a “hello world” message?</p></li>
-<li><p>Now run a container <strong>interactively</strong> from the same image.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Run <cite>whoami</cite> in the container.</p></li>
-<li><p>Exit the container and run <cite>whoami</cite> on the host machine: do you get the same output?</p></li>
+<section id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><ul>
+<li><p><strong>Imagemagick</strong></p></li>
 </ul>
-</div></blockquote>
 </li>
-<li><p>Restart the container you just exited:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Is it now running?</p></li>
-<li><p>Make the container execute the command <cite>ls</cite>.</p></li>
-<li><p>Stop the container.</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>Remove the alpine image and all its containers (running or stopped).</p></li>
-</ul>
-<details>
-<summary><a>Suggested solution</a></summary><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>Search and pull the alpine image <span class="o">(</span>tag <span class="m">3</span>.12<span class="o">)</span> - it is an official build.
-<span class="go">docker search alpine --filter is-official=true</span>
-<span class="go">docker pull  alpine:3.12</span>
-<span class="gp"># </span>Can you run a container from this image and make it print a “hello world” message?
-<span class="go">docker run alpine:3.12 echo &quot;hello world&quot;</span>
-<span class="gp"># </span>Now run a container **interactively** from the same image.
-<span class="go">docker run --detach alpine:3.12 tail -f /dev/null</span>
-<span class="gp">  # </span>Run <span class="sb">`</span>whoami<span class="sb">`</span>
-<span class="go">  whoami</span>
-<span class="gp">  # </span>Exit the container.
-<span class="go">  exit</span>
-<span class="gp"># </span>Restart the container you just exited: is it now running?
-<span class="go">docker restart CONTAINER_ID # find it with `docker ps -a`</span>
-<span class="gp"># </span>Make the container execute the <span class="nb">command</span> <span class="sb">`</span>ls<span class="sb">`</span>
-<span class="go">docker exec CONTAINER_ID ls</span>
-<span class="gp"># </span>Stop the container
-<span class="go">docker stop CONTAINER_ID</span>
-<span class="gp"># </span>Remove the alpine image and all its containers <span class="o">(</span>running or stopped<span class="o">)</span>
-<span class="go">docker rmi alpine:3.12</span>
-<span class="go">docker rm CONTAINER_ID # check all containers with `docker ps -a`</span>
-</pre></div>
-</div>
-</details><ul class="simple">
-<li><p>2 - <strong>Imagemagick</strong></p></li>
 <li><p>Pull the imagemagick image that is official and that has the highest number of stars</p></li>
 <li><p>Check the version of the convert command.</p></li>
 <li><p>Start a container interactively.</p></li>
