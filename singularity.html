@@ -67,10 +67,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#exercise">Exercise</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#singularity-recipes">Singularity recipes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#docker-bootstrap">Docker bootstrap</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="#singularity-advanced-aspects">Singularity advanced aspects</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bind-paths-aka-volumes">Bind paths (aka volumes)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Exercise</a></li>
@@ -273,26 +269,6 @@
 <li><p>Explore the inside contents of the image</p></li>
 <li><p>Execute in different ways <code class="docutils literal notranslate"><span class="pre">samtools</span></code> program (e. g., using <em>fqidx</em> option)</p></li>
 </ul>
-</section>
-</section>
-<section id="singularity-recipes">
-<h2>Singularity recipes<a class="headerlink" href="#singularity-recipes" title="Permalink to this heading"></a></h2>
-<section id="docker-bootstrap">
-<h3>Docker bootstrap<a class="headerlink" href="#docker-bootstrap" title="Permalink to this heading"></a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BootStrap</span><span class="p">:</span> <span class="n">docker</span>
-<span class="n">From</span><span class="p">:</span> <span class="n">biocontainers</span><span class="o">/</span><span class="n">fastqc</span><span class="p">:</span><span class="n">v0</span><span class="mf">.11.9</span><span class="n">_cv7</span>
-
-<span class="o">%</span><span class="n">runscript</span>
-    <span class="n">echo</span> <span class="s2">&quot;Welcome to FastQC Image&quot;</span>
-    <span class="n">fastqc</span> <span class="o">--</span><span class="n">version</span>
-
-<span class="o">%</span><span class="n">post</span>
-    <span class="n">echo</span> <span class="s2">&quot;Image built&quot;</span>
-</pre></div>
-</div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo singularity build fastqc.sif docker.singularity</span>
-</pre></div>
-</div>
 </section>
 </section>
 <section id="singularity-advanced-aspects">
