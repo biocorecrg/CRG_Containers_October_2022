@@ -247,7 +247,7 @@ If it is run with the argument **hello moon** it will execute `echo "hello moon"
   CMD ["hello world"]
 
 
-A more complex recipe (save it in a text file named **Dockerfile**:
+A more complex recipe (save it in a text file named **Dockerfile**):
 
 .. code-block::
 
