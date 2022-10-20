@@ -1,9 +1,9 @@
-# CRG Course Containers - June 2022
+# CRG Course Containers - October 2022
 
 Reproducible research using Containers
 
-* [Course page](https://github.com/biocorecrg/CRG_Containers_June_2022)
-* [Course materials](https://biocorecrg.github.io/CRG_Containers_June_2022)
+* [Course page](https://github.com/biocorecrg/CRG_Containers_October_2022)
+* [Course materials](https://biocorecrg.github.io/CRG_Containers_October_2022)
 
 
 
@@ -40,18 +40,14 @@ Having a [GitHub account](https://github.com/join) is recommended.
 
 ## Dates, time, location
 
-* Dates: 29th June 2022. Time: 9:30 - 17:00h (CET)
+* Dates: 24th October 2022. Time: 11:30 - 17:30h (CET)
 
 * Location: Training room, CRG
 ## Program
 
-* 09:30-11:00 Introduction to containers and Docker
-* 11:00-11:15 Coffee Break
-* 11:15-13:00 Docker
-* 13:00-14:00 Lunch break
-* 14:00-15:30 More advanced Docker
-* 15:30-15:45 Coffee break
-* 15:45-17:00 Singularity
+* 11:00-12:00 Introduction to containers and Docker
+* 12:00-14:30 Lunch break
+* 14:30-17:30 Docker and Singularity
 
 ## Acknowledgements
 
