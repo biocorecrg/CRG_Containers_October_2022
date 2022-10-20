@@ -172,29 +172,6 @@ Exercise
 * Explore the inside contents of the image
 * Execute in different ways ``samtools`` program (e. g., using *fqidx* option)
 
-Singularity recipes
-===================
-
-Docker bootstrap
-----------------
-
-.. code-block::
-
-  BootStrap: docker
-  From: biocontainers/fastqc:v0.11.9_cv7
-
-  %runscript
-      echo "Welcome to FastQC Image"
-      fastqc --version
-
-  %post
-      echo "Image built"
-
-
-.. code-block:: console
-
-    sudo singularity build fastqc.sif docker.singularity
-
 
 Singularity advanced aspects
 ============================
