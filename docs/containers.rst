@@ -34,23 +34,6 @@ Do not confuse with hardware emulator                  Application and dependenc
 Enable virtual machines                                Every virtual machine with an OS (Operating System)
 =====================================================  =====================================================
 
-
-Virtualisation
-----------------------------------
-
-* Abstraction of physical hardware
-* Depends on hypervisor (software)
-* Do not confuse with hardware emulator
-* Enable virtual machines:
-	* Every virtual machine with an OS (Operating System)
-
-Containerisation (aka lightweight virtualisation)
--------------------------------------------------
-
-* Abstraction of application layer
-* Depends on host kernel (OS)
-* Application and dependencies bundled all together
-
 Virtual machines vs containers
 ----------------------------------------
 
