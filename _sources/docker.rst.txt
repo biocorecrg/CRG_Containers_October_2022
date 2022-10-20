@@ -192,11 +192,16 @@ Run container as daemon (in background)
 
 .. code-block:: console
 
+  docker run -ti --detach ubuntu:18.04
+
   docker run --detach ubuntu:18.04 tail -f /dev/null
+  
 
 Run container as daemon (in background) with a given name
 
 .. code-block:: console
+
+  docker run -ti --detach --name myubuntu ubuntu:18.04
 
   docker run --detach --name myubuntu ubuntu:18.04 tail -f /dev/null
 
