@@ -65,7 +65,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#major-clean">Major clean</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#exercise">Exercise</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#volumes">Volumes</a></li>
@@ -320,41 +319,6 @@
 </ul>
 </section>
 </section>
-<section id="exercise">
-<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading"></a></h3>
-<ul class="simple">
-<li><ul>
-<li><p><strong>Imagemagick</strong></p></li>
-</ul>
-</li>
-<li><p>Pull the imagemagick image from: <a class="reference external" href="https://hub.docker.com/r/acleancoder/imagemagick-full">https://hub.docker.com/r/acleancoder/imagemagick-full</a></p></li>
-<li><p>Check the version of the convert command.</p></li>
-<li><p>Start a container interactively.</p></li>
-<li><p>Inside the container: download this png image (<a class="reference external" href="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png">https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png</a>)</p></li>
-<li><p>Convert it to .jpg using the convert command of imagemagick (format; convert image.png image.jpg).</p></li>
-<li><p>Exit the container.</p></li>
-<li><p>Copy the jpg image back from the stopped container! Try new command <cite>docker cp</cite>.</p></li>
-</ul>
-<details>
-<summary><a>Suggested solution</a></summary><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>Pull image
-<span class="go">docker pull acleancoder/imagemagick-full</span>
-
-<span class="gp"># </span>Check version of <span class="sb">`</span>convert<span class="sb">`</span>
-<span class="go">docker run acleancoder/imagemagick-full convert --version</span>
-
-<span class="gp"># </span>Start interactive container
-<span class="go">docker run -it acleancoder/imagemagick-full</span>
-<span class="gp">  # </span>fetch png image
-<span class="go">  &gt; wget  https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png</span>
-<span class="gp">  # </span>convert to jpg
-<span class="go">  &gt; convert vertical-logo-monochromatic.png myimage.jpg</span>
-<span class="gp">  # </span><span class="nb">exit</span> container
-
-<span class="gp"># </span>fetch container ID with <span class="sb">`</span>ps -a<span class="sb">`</span> and use <span class="sb">`</span>docker cp<span class="sb">`</span> to copy jpg file from the stopped container to the host
-<span class="go">docker cp *CONTAINER_ID*:/myimage.jpg .</span>
-</pre></div>
-</div>
-</details></section>
 </section>
 <section id="volumes">
 <h2>Volumes<a class="headerlink" href="#volumes" title="Permalink to this heading"></a></h2>
