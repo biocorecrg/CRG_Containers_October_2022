@@ -10,7 +10,7 @@ About the course
 
 This slow-paced hands-on course is designed for absolute beginners who want to start using scientific containers to achieve reproducibility of data analysis.
 
-* `Course page <https://github.com/biocorecrg/CRG_Containers_June_2022>`_
+* `Course page <https://github.com/biocorecrg/CRG_Containers_October_2022>`_
 
 
 .. |toni| image:: images/thermoso.jpg
@@ -73,9 +73,9 @@ Having a `GitHub account <https://github.com/join>`_ is recommended.
 Dates, time, location
 ============
 
-* Dates: Wednesday June 29, 2022
+* Dates: Wednesday October 24, 2022
 
-* 9:30 - 17:00 **CET**
+* 11:00 - 17:30 **CET**
 
 
 * Location: Training room, CRG
@@ -86,12 +86,8 @@ Dates, time, location
 Suggested program
 ============
 
-* 09:30-11:00 Introduction to containers and Docker
-* 11:00-11:15 Coffee Break
-* 11:15-13:00 Docker
-* 13:00-14:00 Lunch break
-* 14:00-15:30 More advanced Docker
-* 15:30-15:45 Coffee break
-* 15:45-17:00 Singularity
+* 11:00-12:00 Introduction to containers and Docker
+* 12:00-14:30 Lunch break
+* 14:30-17:30 Docker and Singularity
 
 
