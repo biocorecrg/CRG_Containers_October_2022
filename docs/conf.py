@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'CRG Course - Containers: Docker and Singularity. June 2022'
+project = u'CRG Course - Containers: Docker and Singularity. October 2022'
 copyright = u'2022, CRG'
 author = u'Luca Cozzuto'
 author = u'Julia Ponomarenko'
