@@ -262,3 +262,14 @@ Normally at ``/etc/singularity/singularity.conf`` or similar (e.g preceded by ``
 
 * It can only be modified by users with administration permissions
 * Worth noting ``bind path`` lines, which point default mounted directories in containers
+
+NOTE: Version at the CRG
+************************
+
+.. code-block::
+
+        module use /software/as/el7.2/EasyBuild/CRG/modules/all
+	#module spider singularity -> This search for modules with that name
+	#module spider apptainer
+        #module load Singularity/3.7.0
+        module load Apptainer/1.0.3
