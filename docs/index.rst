@@ -1,7 +1,7 @@
 .. _home-page:
 
 *******************
-Scientific Containers: Docker and Singularity - June 2022
+Scientific Containers: Docker and Singularity - October 2022
 *******************
 
 
